@@ -1,0 +1,21 @@
+:root{
+    --tobool-bg: #f6f8f9;
+}
+
+#site_header {
+    height: 75px;
+    background-color: white;
+    background-image: url("../img/Logo.png");
+    background-repeat: no-repeat;
+}
+
+.header_text {
+    font-size:1.5em;
+    font-family: sans-serif;
+    padding-left:60px;
+    
+}
+
+#site_main {
+
+}

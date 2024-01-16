@@ -1,0 +1,23 @@
+righe in sospeso...
+
+body > main:
+#site_main {
+    background-color: var(--tobool-bg);
+}
+
+#main_box{
+    width:800px;
+    height:600px;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: url("");
+}
+
+<div id="main_box">
+
+</div>
