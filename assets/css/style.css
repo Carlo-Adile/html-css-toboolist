@@ -1,5 +1,7 @@
 :root{
     --tobool-bg: #f6f8f9;
+    --tobool-graphics: #d0d5d9;
+    --tobool-addtask: #47adf1;
 }
 
 #site_header {
@@ -16,6 +18,51 @@
     
 }
 
-#site_main {
+main {
+    background-color: var(--tobool-bg);
+}
 
+#site_main {
+    padding:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.main_box {
+    background-color: white;
+    height:600px;
+    width:1000px;
+}
+
+.buttons_section {
+    padding-left:50px;
+    padding-top:10px;
+    margin-bottom: 5px;
+}
+
+button {
+    height:2em;
+    border-radius:3px;
+}
+
+.add_task{
+    color:white;
+    background-color: var(--tobool-addtask);
+    border-style: none;
+}
+
+.add_section{
+    color:var(--tobool-graphics);
+    background-color: white;
+    border-color:var(--tobool-graphics);
+    border-width: 2px;
+    border-style:solid;
+}
+
+/* graphics elements all fit the same style egs.color */
+
+hr {
+    border-width:1px;
+    border-style:solid;
+    border-color:var(--tobool-bg);
 }
