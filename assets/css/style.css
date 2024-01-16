@@ -2,6 +2,14 @@
     --tobool-bg: #f6f8f9;
     --tobool-graphics: #d0d5d9;
     --tobool-addtask: #47adf1;
+    --tobool-editorial:#45ABEA;
+    --tobool-q1_goals: #9C72E4;
+    --tobool-recruiting: #64C0A9;
+    --tobool-mobile:#F29E33;
+    --tobool-website:#D863A1;
+    --tobool-sales:#B0C926;
+    --tobool-maintext:#4D5059;
+    --tobool-check:"\25BC";
 }
 
 #site_header {
@@ -14,8 +22,7 @@
 .header_text {
     font-size:1.5em;
     font-family: sans-serif;
-    padding-left:60px;
-    
+    padding-left:60px; 
 }
 
 main {
@@ -33,6 +40,8 @@ main {
     height:600px;
     width:1000px;
 }
+
+/* Buttons Sections */
 
 .buttons_section {
     padding-left:50px;
@@ -57,6 +66,77 @@ button {
     border-color:var(--tobool-graphics);
     border-width: 2px;
     border-style:solid;
+}
+
+/* To do list section */
+
+.todo {
+    line-height:2em;
+    font-family: sans-serif;
+    color:var(--tobool-maintext);
+}
+
+.main_bullet {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight:bold;
+}
+
+.main_bullet::before {
+    content:var(--tobool-check);
+}
+
+li::before{
+    border-radius: 100%;
+    border-color:var(--tobool-graphics);
+}
+
+.complete::before{
+    content:"\1F5F8";
+    padding:0px;
+    border-style:solid;
+}
+
+.uncomplete::before{
+    content:"\2717";
+    padding:0px;
+    border-style:solid;
+}
+
+li span {
+    color:white;
+    font-size:0.7em;
+    padding:5px;
+    margin-left:5px;
+    border-radius:10px;
+}
+
+.editorial{
+    background-color:var(--tobool-editorial);
+}
+
+.recruiting{
+    background-color:var(--tobool-recruiting);
+}
+
+.q1_goals{
+    background-color:var(--tobool-q1_goals);
+}
+
+.mobile{
+    background-color:var(--tobool-mobile);
+}
+
+.website{
+    background-color:var(--tobool-website);
+}
+
+.sales{
+    background-color:var(--tobool-sales);
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* graphics elements all fit the same style egs.color */
